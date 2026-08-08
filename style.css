@@ -1,0 +1,124 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #df0000;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 496px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Correction de la syntaxe :where() */
+.wrapper :where(.title, .details) {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    width: 24px;
+    height: 24px;
+}
+
+.title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Style unique pour l'input de l'URL longue */
+.content input {
+    width: 100%;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    padding: 12px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+.content input:focus {
+    border-color: #6d83ff;
+}
+
+.details {
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+.details > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Zone d'affichage du lien court */
+#shortUrl {
+    font-style: italic;
+    font-size: 15px;
+    color: #d600b1;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Boutons */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.generatelinkBtn {
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #6d83ff;
+}
+
+.generatelinkBtn:hover {
+    background-color: #5266d6;
+}
+
+.copyBtn {
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #a6a6a6;
+    align-items: flex-end;
+}
+
+.copyBtn:hover {
+    background-color: #f5f5f5;
+    border-color: #666;
+}
+
+.copyBtn img {
+    width: 20px;
+    height: 20px;
+}
