@@ -10,7 +10,7 @@ async function generateShortlink() {
     const apiUrl = 'https://tinyurl.com/api-create.php?url=' + encodeURIComponent(longUrl);
     
     console.log(apiUrl);
-
+//Api
     try {
         const response = await fetch(apiUrl);
         
